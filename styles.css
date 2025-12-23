@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./assets/fonts/Norse-Bold.otf");
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+#sidebar{
+    background-image: url("./assets/images/photo-1585202900225-6d3ac20a6962.htm");
+    width: 30%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+#odin-logo{
+    font-family: "Norse-Bold","Skranji";
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+#odin-logo > h1{
+    display: inline-block;
+    font-size: 8rem;
+    margin: auto auto auto 0;
+}
+#odin-logo img{
+    height: 8rem;
+    margin: auto 0 auto auto;
+}
+
+.credits{
+    color: whitesmoke;
+    margin: auto auto 0;
+}
+
+#form{
+    display: flex;
+    direction: column;
+}
+#form input{
+    display: block;
+}
