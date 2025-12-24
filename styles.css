@@ -1,57 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @font-face {
-    font-family: "Norse-Bold";
-    src: url("./assets/fonts/Norse-Bold.otf");
+  font-family: "Norse-Bold";
+  src: url("./assets/fonts/Norse-Bold.otf");
 }
+
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-}
-main{
-    display: flex;
-    flex-direction: column;
-}
-#sidebar{
-    background-image: url("./assets/images/photo-1585202900225-6d3ac20a6962.htm");
-    width: 30%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-}
-#odin-logo{
-    font-family: "Norse-Bold","Skranji";
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.4);
-    margin-top: 8rem;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
-#odin-logo > h1{
-    display: inline-block;
-    font-size: 8rem;
-    margin: auto auto auto 0;
-}
-#odin-logo img{
-    height: 8rem;
-    margin: auto 0 auto auto;
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
 
-.credits{
-    color: whitesmoke;
-    margin: auto auto 0;
+#sidebar {
+  background-image: url("./assets/images/photo-1585202900225-6d3ac20a6962.htm");
+  width: 40%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+#odin-logo {
+  font-family: "Norse-Bold", "Skranji";
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+#odin-logo > h1 {
+  display: inline-block;
+  font-size: 8rem;
+  margin: auto auto auto 0;
+}
+#odin-logo img {
+  height: 8rem;
+  margin: auto 0 auto auto;
 }
 
+.credits {
+  color: whitesmoke;
+  margin: auto auto 0;
+}
+
+#header{
+    margin-top: auto;
+    margin-left: 2rem;
+    line-height: 1.6;
+}
+#header h2 {
+ width: 60%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f5;
+  gap: 1rem;
+  font-family: "Lato";
+}
 #form{
-    display: flex;
-    direction: column;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 1px #ffffff;
+  padding: 1rem 2rem;
+}
+#form form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+#form h2{
+    margin-bottom: 1rem;
 }
 #form input{
-    display: block;
+    height: 1.6rem;
+    width: 18rem;
+    border-radius: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.6)
+}
+#form input:focus{
+    border: blue;
+}
+#form input[type="password"]:invalid{
+    border: 1px solid red;
+}
+.input-card{
+    display: flex;
+    flex-direction: column;
+
+}
+#submit-btn {
+  color: whitesmoke;
+  border: none;
+  background-color: #596d48;
+  border-radius: 0.6rem;
+  box-shadow: 0.1px 0.1px 1px 0.1px black;
+  padding: 0.8rem;
+  width: 10rem;
+  margin: 1rem auto;
+  font-weight: 600;
+  
+}
+#button-area{
+    margin-bottom: auto;
+    margin-left: 2rem;
+}
+#button-area a{
+    color: #596d48;
 }
