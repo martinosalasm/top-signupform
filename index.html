@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Sign up</title>
-  </head>
-  <body>
-    <div id="sidebar">
-      <div id="odin-logo">
-        <img src="./assets/images/odin-lined.png" alt="Odin logo" />
-        <h1>ODIN</h1>
-      </div>
-      <p class="credits">Photo by Hallie West on Unsplashed</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Sign up</title>
+</head>
+
+<body>
+  <div id="sidebar">
+    <div id="odin-logo">
+      <img src="./assets/images/odin-lined.png" alt="Odin logo" />
+      <h1>ODIN</h1>
     </div>
-    <main>
-      <div id="header"><h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br /> Sign up now to get started. </h2></div>
-      <div id="form">
-        <form action="#" method="POST">
-          <h3>Let's do this</h3>
+    <p class="credits">Photo by Hallie West on Unsplashed</p>
+  </div>
+  <main>
+    <div id="header">
+      <h2>
+        This is not a real online service! You know you need something like
+        this in your life to help you realize your deepest dreams. <br />
+        Sign up <em>now to get started.</em> <br />
+        <br />
+        You <em>know</em> you want to.
+      </h2>
+    </div>
+    <div id="form">
+      <h2>Let's do this!</h2>
+      <form action="#" method="POST">
+        <div class="input-card">
           <label for="fname">First Name</label>
-          <input type="text" name="fname" id="fname" />
+          <input type="text" name="fname" id="fname" required />
+        </div>
+        <div class="input-card">
           <label for="lname">Last Name</label>
-          <input type="text" name="lname" id="lname" />
+          <input type="text" name="lname" id="lname" required />
+        </div>
+        <div class="input-card">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="input-card">
           <label for="phone">Phone Number</label>
-          <input type="tel" name="phone" id="phone" />
+          <input type="tel" name="phone" id="phone" required />
+        </div>
+        <div class="input-card">
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
+          <input type="password" name="password" id="password" min="1" max="20" required />
+        </div>
+        <div class="input-card">
           <label for="confirmPassword">Confirm your password</label>
-          <input type="password" name="confirmPassword" id="confirmPasword" />
-        </form>
-      </div>
-      <div id="button-area">
-        <button type="submit" form="form">Create Account</button>
-        <p>
-          Already have an account?
-          <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a>
-        </p>
-      </div>
-    </main>
-  </body>
+          <input type="password" name="confirmPassword" id="confirmPasword" min="1" max="20" required />
+        </div>
+      </form>
+    </div>
+    <div id="button-area">
+      <button type="submit" form="form" id="submit-btn">
+        Create Account
+      </button>
+      <p>
+        Already have an account?
+        <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a>
+      </p>
+    </div>
+  </main>
+</body>
+
 </html>
